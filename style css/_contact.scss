@@ -1,0 +1,60 @@
+.section-contact {
+  text-align: center;
+  h2,
+  h4 {
+    margin: 1rem 0;
+  }
+}
+
+.contact-form {
+  background-color: $color-secondary-gray;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 95%;
+  margin: auto;
+  margin-top: 2rem;
+
+  form {
+    width: 100%;
+    //     background: chartreuse;
+  }
+
+  &__row {
+    width: 100%;
+    margin: auto;
+
+    input,
+    textarea {
+      font-family: 'Montserrat', sans-serif;
+      color: $color-primary-black;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+
+      color: $color-primary-black;
+      background: whitesmoke;
+      width: 95%;
+      padding: 0.5rem;
+      outline: none;
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 1rem 0;
+      /* not able to resize the textarea */
+      resize: none;
+    }
+
+    button {
+      width: 90%;
+      padding: 2em;
+      margin: 1em 0;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5%;
+  padding: 1em 2.5em;
+  background-color: $color-primary-black;
+  border: none;
+  color: $color-primary-white;
+  font-size: 0.8em;
+}

@@ -1,0 +1,169 @@
+// MOBILE
+
+header {
+  max-height: 85vh;
+  padding: 1em 0;
+  background-image: url(../img/matt-hoffman-unsplash-paperwall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-primary-black;
+
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0 3em 0;
+}
+.logo {
+  height: 3.5em;
+  width: 3.5em;
+  margin-left: -1rem;
+}
+
+nav {
+  // flex: 2;
+  // margin-left: 2em;
+  background-color: $color-secondary-gray;
+  // padding: 0.5em 0;
+  width: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.3);
+
+  transition: width 0.6s linear;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 0;
+    transition: width 0.6s linear;
+
+    border-radius: 0.5em;
+    line-height: 1em;
+  }
+  li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+
+  li a {
+    position: relative;
+    font-size: 1rem;
+    margin: 0 0.2em;
+  }
+}
+
+nav.active {
+  flex: 1;
+  margin-left: 1rem;
+
+  & .icon {
+    margin-right: 0.5rem;
+    & .line1 {
+      transform: rotate(-763deg) translateY(0.61rem);
+    }
+
+    & .line2 {
+      transform: rotate(763deg) translateY(-0.61rem);
+    }
+  }
+  ul {
+    width: 100%;
+    padding: 0.5em;
+    // to be visible and rotate
+    li {
+      opacity: 1;
+      transform: rotateY(360deg);
+    }
+  }
+}
+
+.icon {
+  background-color: $color-secondary-gray;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  // margin-left: 1rem;
+  // lines inside are absolute
+  position: relative;
+  padding: 0;
+  height: 3rem;
+  width: 3rem;
+
+  &:focus {
+    outline: 0;
+  }
+
+  & .line {
+    background-color: $color-primary-black;
+    height: 0.1rem;
+    width: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    left: 0.85rem;
+
+    transition: transform 0.6s linear;
+  }
+
+  & .line2 {
+    top: auto;
+    bottom: 1rem;
+  }
+}
+
+#header__girl {
+  width: 70%;
+}
+
+.header__main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+// DESKTOP
+@media (min-width: 800px) {
+  header {
+    max-height: 100vh;
+  }
+  .logo {
+    height: 5em;
+    width: 5.5em;
+  }
+
+  nav {
+    max-width: 60%;
+
+    li a {
+      position: relative;
+      font-size: 1.4rem;
+      margin: 0 0.3em;
+    }
+  }
+
+  #header__girl {
+    width: 30%;
+    overflow: hidden;
+  }
+}
+
+// BIG DESKTOP
+@media (min-width: 1400px) {
+  header {
+    min-height: 100%;
+  }
+
+  #header__girl {
+    width: 35%;
+    overflow: hidden;
+  }
+}

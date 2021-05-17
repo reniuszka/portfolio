@@ -1,0 +1,214 @@
+main {
+  background-image: url(../img/whitepaper.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-primary-black;
+
+  & h2 {
+    padding: 1em 0;
+    color: $color-primary-black;
+    //     padding: 1rem 0 0 0;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+
+  &__text {
+    // border: 2px double $color-primary-black;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-primary-black;
+    color: $color-primary-white;
+    h4 {
+      padding: 0.5rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  &__noteworthy {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em;
+    padding-bottom: 3em;
+  }
+}
+
+.project {
+  margin: 3em auto;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+  }
+
+  &__effect {
+    position: relative;
+    overflow: hidden;
+
+    &:hover .firstImg {
+      transform: scale(1.05);
+    }
+
+    &:hover .secondImg {
+      transform: translateX(-700px) skewX(40deg);
+    }
+
+    &:hover .thirdImg {
+      transform: translateX(700px) skewX(-40deg);
+    }
+
+    & .firstImg {
+      transition: transform 0.8s;
+      cursor: pointer;
+    }
+
+    & .secondImg,
+    .thirdImg {
+      position: absolute;
+      top: 0;
+      z-index: 3;
+      filter: grayscale(0.8);
+      transition: transform 1.6s;
+      cursor: pointer;
+    }
+    & .secondImg {
+      left: 0;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
+
+    & .thirdImg {
+      right: 0;
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+  }
+}
+
+.projects__noteworthy {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.card {
+  &__content {
+    text-align: center;
+    position: relative;
+    // background: cornflowerblue;
+    padding: 5rem;
+    transition: transform 2.5s;
+    transform-style: preserve-3d;
+  }
+
+  &:hover .card__content {
+    transform: rotateY(0.5turn);
+  }
+
+  &__front,
+  &__back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+  }
+
+  &__front {
+    background-color: rgba(13, 51, 82, 0.91);
+
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: $color-primary-white;
+    &--1 {
+      background-image: url(../img/netlix.png);
+    }
+    &--2 {
+      background-image: url(../img/rolladice.png);
+    }
+    &--3 {
+      background-image: url(../img/mapty.png);
+    }
+    &--4 {
+      background-image: url(../img/loruki.png);
+    }
+    // border
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+      border: 2px solid currentColor;
+      transform: translateZ(3rem);
+    }
+  }
+  &__title {
+    transform: translateZ(9rem);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    // text-align: center;
+    transform: translateZ(6rem);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-secondary-gray-dark;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+
+    background-color: $color-primary-white;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    li {
+      padding: 0.5rem;
+    }
+  }
+  &__body {
+    transform: translateZ(6rem);
+  }
+  &__back {
+    transform: rotateY(0.5turn);
+    background: $color-secondary-gray;
+    color: $color-primary-black;
+    text-transform: uppercase;
+    a {
+      color: $color-primary-black;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .projects__noteworthy {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  main {
+    max-width: 85%;
+    margin: 5rem auto;
+  }
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- google fonts 
+ -->
+ <link rel="preconnect" href="https://fonts.gstatic.com" />
+ <link
+   href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barriecito&family=Josefin+Sans:wght@100;200&family=Megrim&family=Montserrat:wght@200;300;400;500;600;700;900&family=New+Tegomin&family=Shadows+Into+Light&display=swap"
+   rel="stylesheet"
+ />
+ <link
+   href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
+   rel="stylesheet"
+ />
+
+    <link rel="stylesheet" href="style css/main.css" />
+    <title>Portfolio | Renata Diurczak</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <img src="./img/logo-R.png" alt="logo R" class="logo"/>
+          <nav class="active" id='nav'>
+            <ul>
+              <li><a href="./resume/Renata.Diurczak.Resume.pdf" target="_blank">Resume</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="icon" id="toggle">
+                      <div class="line line1"></div>
+                      <div class="line line2"></div>
+            </button>
+          </nav>
+        </div>
+
+        <div class="header__main">
+                  <div class="header__text">
+                              <h1>Renata Diurczak</h1>
+                              <p>Junior Front End Developer</p>
+                              <p id="header__text">Welcome to my website</p>
+          </div>
+          
+          <img id="header__girl" src="img/6.png" alt="anime girl" />
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section-interests container">
+      <div class="section-interests__info">
+        <h2>About me</h2>
+        <ul class="section-interests__links">
+          <li class="section-interests__link">
+            <a href="./resume/Renata.Diurczak.Resume.pdf" target="_blank"
+              >Resume</a
+            >
+          </li>
+          <li  class="section-interests__link">
+            <a href="https://github.com/reniuszka" target="_blank rel="noopener noreferrer"">Github</a>
+          </li>
+          <li class="section-interests__link">
+            <a href="https://www.linkedin.com/in/renata-diurczak/" target="_blank" rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+        <h4>Here are technologies I've been working with :</h4>
+        <ul class="section-interests__tools">
+          <li>HTML</li>
+          <li>CSS3</li>
+          <li>SASS</li>
+          <li>JS</li>
+          <li>Googling</li>
+        </ul>
+      </div>
+      
+      <p class="section-interests__about">
+        Hello! I'm Renata Diurczak, a Polish Junior Front End Developer. I enjoy
+        creating things that live on the internet. The primary area of my
+        interest is indoubtedly front-end. My passion for code had begun with a
+        small project in Wordpress 2 years ago. Fast-forward to today, I gained
+        a significant amount of experience working for two greek NGOs called
+        Youth Orama and Balkan Hotspot. I continue keep learning, challenging
+        myself. Currently discovering the power of React. Actually for hire.
+      </p>
+    </section>
+
+    <main >
+                    <div class="container">
+                              <h2 class="title">My online projects</h2>
+                              <div class="projects"></div>
+
+                                        <div class="project">
+                                          <div class="project__effect">
+                                            <a
+                                              href="https://logopedapodhale.pl/"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              ><img src="img/logopedia.png" class="firstImg" alt="prologos"
+                                              /></a>
+                                            <img src="img/logopedia.png" class="secondImg" alt="" />
+                                            <img src="img/logopedia.png" class="thirdImg" alt="" />
+                                          </div>
+
+                                          <div class="projects__text">
+                                            <h4>Prologos</h4>
+                                            <p>A single page web for speech therapy built with JS</p>
+                                            <ul>
+                                              <li>HTML</li>
+                                              <li>CSS</li>                                   
+                                              <li>JS</li>
+                                            </ul>
+                                          </div>     
+                                        </div>
+
+                                        <div class="project">
+
+                                          <div class="project__effect">
+                                            <a href="https://aballforall.com/"
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"><img src="./img/aballfoall-main.png" alt="aballforall" class="firstImg"></a>
+                                            <img src="img/aballfoall-main.png" class="secondImg" alt="" />
+                                            <img src="img/aballfoall-main.png" class="thirdImg" alt="" />
+                                          </div>
+
+                                          <div class="projects__text">
+                                            <h4>A Ball For All</h4>
+                                            <p>A new web for NGO A Ball For All translated into 7 languages.</p>
+                                            <ul>
+                                              <li>HTML</li>
+                                              <li>CSS</li>
+                                              <li>SASS</li>
+                                            </ul>
+                                            </div>        
+                                        </div>
+
+                                        <div class="project">
+                                          <div class="project__effect">
+                                            <a
+                                            href="https://aballforall.com/donation_750_balls_2_blind_schools_kenyan_documentary_winter_2022.html"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            ><img
+                                              src="img/aballforall-kenya.png"
+                                              class="firstImg"
+                                              alt="a ball for all"
+                                            /></a>
+                                            <img src="img/aballforall-kenya.png" class="secondImg" alt="" />
+                                            <img src="img/aballforall-kenya.png" class="thirdImg" alt="" />
+                                          </div>
+
+                                          <div class="projects__text">
+                                            <h4>A Ball For All Kenya</h4>
+                                            <p>A web project for A Ball For All and UEFA Foundation promoting donation and a documentary.</p>
+                                            <ul>
+                                              <li>HTML</li>
+                                              <li>CSS</li>                                   
+                                              <li>JS</li>
+                                            </ul>
+                                          </div>     
+                                        </div>
+
+                                        <div class="project">
+                                          <div class="project__effect">
+                                            <a
+                                              href="https://aballforall.com/uefafoundationforchildren.html"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              ><img
+                                                src="img/aballforall-uefa.png"
+                                                class="firstImg"
+                                                alt="a ball for all"
+                                            /></a>
+                                            <img src="img/aballforall-uefa.png" class="secondImg" alt="" />
+                                            <img src="img/aballforall-uefa.png" class="thirdImg" alt="" />
+                                          </div>
+
+                                          <div class="projects__text">
+                                            <h4>A Ball For All & UEFA Foundation</h4>
+                                            <p>A simple application web for UEFA Foundation For Children</p>
+                                            <ul>
+                                              <li>HTML</li>
+                                              <li>CSS</li>                                   
+                                              <li>JS</li>
+                                            </ul>
+                                          </div>     
+                                        </div>
+
+
+                                        <h2>Other Noteworthy Projects</h2>
+
+                                        <div class="projects__noteworthy">
+                                                  <!-- <a href="#"><img src="./img/netlix.png" alt=""></a>
+                                                  <a href="#"><img src="./img/rolladice.png" alt=""></a>
+                                                  <a href="#"><img src="./img/mapty.png" alt=""></a> -->
+                                                  <div class="card">
+                                                            <div class="card__content">
+                                                                      <div class="card__front card__front--1">
+                                                                                <h4 class="card__title">Netlix Landing Page</h4>
+                                                                                
+                                                                      </div>
+
+                                                                      <div class="card__back">
+                                                                                <a href="https://netflix-landingpage-2020.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                                                <ul class="card__subtitle">
+                                                                                  <li>HTML</li>
+                                                                                  <li>CSS</li>
+                                                                                  <li>JS</li>
+                                                                                </ul>
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                                  <div class="card">
+                                                    <div class="card__content">
+                                                              <div class="card__front card__front--2">
+                                                                        <h4 class="card__title">Roll a dice</h4>
+                                                                        
+                                                              </div>
+
+                                                              <div class="card__back">
+                                                                        <a href="https://roll-a-random-dice.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                                        <ul class="card__subtitle">
+                                                                          <li>HTML</li>
+                                                                          <li>CSS</li>
+                                                                          <li>JS</li>
+                                                                        </ul>
+                                                              </div>
+                                                    </div>
+                                          </div>
+                                          <div class="card">
+                                            <div class="card__content">
+                                                      <div class="card__front card__front--3">
+                                                                <h4 class="card__title">Mapty App</h4>
+                                                                
+                                                      </div>
+
+                                                      <div class="card__back">
+                                                                <a href="https://map-of-workouts.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                                <ul class="card__subtitle">
+                                                                  <li>HTML</li>
+                                                                  <li>CSS</li>
+                                                                  <li>JS</li>
+                                                                </ul>
+                                                      </div>
+                                            </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card__content">
+                                              <div class="card__front card__front--4">
+                                                        <h4 class="card__title">Loruki Web</h4>
+                                                        
+                                              </div>
+
+                                              <div class="card__back">
+                                                        <a href="https://loruki-web-2021.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                        <ul class="card__subtitle">
+                                                          <li>HTML</li>
+                                                          <li>CSS</li>
+                                                          <li>SASS</li>
+                                                        </ul>
+                                              </div>
+                                    </div>
+                          </div>
+                                        </div>
+                              </div>
+                    </div>
+                    
+    </main>
+
+    <section class="section-contact container">
+          <h2>Contact me</h2>
+          <h4>I'm currently looking for new opportunities.</h4>
+          <h4>
+            Whether you have a question or just want to say hi, I'll try my best to
+            get back to you!
+          </h4>
+
+          <!-- format submit -->
+          <div class="contact-form"> 
+                    <form action="https://formsubmit.co/renia.diurczak@gmail.com" method="POST">
+                      <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New email from my Portfolio Web!" />
+                    <input type="hidden" name="_next" value="https://renia-diurczak.netlify.app/thankyou.html">
+                    <div class="contact-form__row">
+                              <input type="email" name="email" placeholder="Email Address" required />
+                    </div>
+                    <div class="contact-form__row">
+                              <textarea type="text" name="message" placeholder="Your message" required /></textarea> 
+                    </div> 
+                              <button class='btn' type="submit" value="Send">Send</button>
+                    </form>
+          </div>
+        </section>
+    
+        <footer class="footer">
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+          <!-- <a href="#"> <img src="./img/logo-R.png" alt="logo R" class="logo"></a> -->
+
+          <div class="footer__social">
+                    <a href="./resume/Renata.Diurczak.Resume.pdf" target="_blank"><i class="far fa-file fa-2x"></i></i></a>
+                    <a href="https://github.com/reniuszka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                    
+                    <a href="https://www.linkedin.com/in/renata-diurczak/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+                  </div>
+          
+          
+    
+          <p>&copy; Copyright 2021 by Renata Diurczak</p>
+        </footer>
+    
+        <script src="script.js"></script>
+  </body>
+</html>
