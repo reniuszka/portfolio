@@ -234,6 +234,7 @@ nav.active ul li {
 #header__girl {
   width: 70%;
   overflow: hidden;
+  margin-left: 2rem;
   -webkit-animation: moveInRight 6s ease-in infinite;
           animation: moveInRight 6s ease-in infinite;
 }
