@@ -59,6 +59,12 @@ p {
   font-size: 0.9rem;
 }
 
+// revealing sections to move them down a bit
+.section--hidden {
+  opacity: 0;
+  transform: translateY(6rem);
+}
+
 @media (min-width: 800px) {
   h1 {
     font-size: 4.5rem;

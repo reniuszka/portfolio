@@ -57,4 +57,12 @@
   border: none;
   color: $color-primary-white;
   font-size: 0.8em;
+  cursor: pointer;
+
+  transition: transform 0.15s ease-out;
+
+  &:hover,
+  &:active {
+    transform: scale(1.1);
+  }
 }

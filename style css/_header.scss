@@ -3,7 +3,7 @@
 header {
   max-height: 85vh;
   padding: 1em 0;
-  background-image: url(../img/matt-hoffman-unsplash-paperwall.jpg);
+  background-image: url(../img/matt-hoffman-unsplash-paperwall3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: $color-primary-black;
@@ -18,8 +18,8 @@ header {
   padding: 1em 0 3em 0;
 }
 .logo {
-  height: 3.5em;
-  width: 3.5em;
+  height: 3em;
+  width: 3em;
   margin-left: -1rem;
 }
 
@@ -41,7 +41,7 @@ nav {
 
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 0;
     transition: width 0.6s linear;
 
@@ -56,7 +56,7 @@ nav {
 
   li a {
     position: relative;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0 0.2em;
   }
 }
@@ -121,13 +121,43 @@ nav.active {
 
 #header__girl {
   width: 70%;
+  overflow: hidden;
+
+  animation: moveInRight 6s ease-in infinite;
 }
 
-.header__main {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+@keyframes moveInRight {
+  0% {
+    opacity: 0.8;
+    transform: translateX(10rem);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateX(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.header {
+  &__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
 }
 
 // DESKTOP
@@ -135,9 +165,23 @@ nav.active {
   header {
     max-height: 100vh;
   }
+  .header {
+    &__main {
+      margin: 1.5rem;
+
+      h1 {
+        font-size: 4.5rem;
+      }
+      p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+      }
+    }
+  }
+
   .logo {
-    height: 5em;
-    width: 5.5em;
+    height: 4.5em;
+    width: 5em;
   }
 
   nav {

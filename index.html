@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="description" content="Renata Diurczak - Front-End Developer - Web Design">
+          <meta name="keywords" content="renata diurczak, diurczak, front end developer, strony www, projekt stron, web design, strona internetowa nowy targ, strona internetowa kraków, strona internetowa zakopane">
+
     <!-- font-awesome cdn -->
     <link
       rel="stylesheet"
@@ -23,21 +26,27 @@
    href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
    rel="stylesheet"
  />
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="img/site.webmanifest">
+ <!-- css -->
 
     <link rel="stylesheet" href="style css/main.css" />
     <title>Portfolio | Renata Diurczak</title>
   </head>
   <body>
-    <header>
+    <header id='section--0'>
       <div class="container">
         <div class="navbar">
           <img src="./img/logo-R.png" alt="logo R" class="logo"/>
-          <nav class="active" id='nav'>
+          <nav  id='nav'>
             <ul>
-              <li><a href="./resume/Renata.Diurczak.Resume.pdf" target="_blank">Resume</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./resume/Renata-Diurczak.Resume2021.pdf" target="_blank" id="resume">Resume</a></li>
+              <li><a href="#section--1" class='nav__link'>About</a></li>
+              <li><a href="#section--2" class='nav__link'>Projects</a></li>
+              <li><a href="#section--3" class='nav__link'>Contact</a></li>
             </ul>
             <button class="icon" id="toggle">
                       <div class="line line1"></div>
@@ -48,18 +57,18 @@
 
         <div class="header__main">
                   <div class="header__text">
-                              <h1>Renata Diurczak</h1>
-                              <p>Junior Front End Developer</p>
-                              <p id="header__text">Welcome to my website</p>
+                              <h1 class="big-text">Renata Diurczak</h1>
+                              <p class="big-text">Junior Front End Developer</p>
+                              <p  class="big-text" id="header__text1">Welcome to my website</p>
           </div>
           
-          <img id="header__girl" src="img/6.png" alt="anime girl" />
+          <img id="header__girl" class="girl" src="img/6.png" alt="anime girl" />
         </div>
       </div>
     </header>
 
     <!-- ABOUT -->
-    <section class="section-interests container">
+    <section class="section-interests section container" id='section--1'>
       <div class="section-interests__info">
         <h2>About me</h2>
         <ul class="section-interests__links">
@@ -98,7 +107,7 @@
       </p>
     </section>
 
-    <main >
+    <main id='section--2' class="section">
                     <div class="container">
                               <h2 class="title">My online projects</h2>
                               <div class="projects"></div>
@@ -116,7 +125,12 @@
                                           </div>
 
                                           <div class="projects__text">
-                                            <h4>Prologos</h4>
+                                            <a
+                                              href="https://logopedapodhale.pl/"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              ><h4>Prologos</h4></a>
+                                            
                                             <p>A single page web for speech therapy built with JS</p>
                                             <ul>
                                               <li>HTML</li>
@@ -137,7 +151,10 @@
                                           </div>
 
                                           <div class="projects__text">
-                                            <h4>A Ball For All</h4>
+                                            <a href="https://aballforall.com/"
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"><h4>A Ball For All</h4></a>
+                                            
                                             <p>A new web for NGO A Ball For All translated into 7 languages.</p>
                                             <ul>
                                               <li>HTML</li>
@@ -163,7 +180,13 @@
                                           </div>
 
                                           <div class="projects__text">
-                                            <h4>A Ball For All Kenya</h4>
+
+                                            <a
+                                            href="https://aballforall.com/donation_750_balls_2_blind_schools_kenyan_documentary_winter_2022.html"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            ><h4>A Ball For All Kenya</h4></a>
+                                            
                                             <p>A web project for A Ball For All and UEFA Foundation promoting donation and a documentary.</p>
                                             <ul>
                                               <li>HTML</li>
@@ -189,7 +212,12 @@
                                           </div>
 
                                           <div class="projects__text">
-                                            <h4>A Ball For All & UEFA Foundation</h4>
+                                            <a
+                                              href="https://aballforall.com/uefafoundationforchildren.html"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                              ><h4>A Ball For All & UEFA Foundation</h4></a>
+                                            
                                             <p>A simple application web for UEFA Foundation For Children</p>
                                             <ul>
                                               <li>HTML</li>
@@ -214,7 +242,7 @@
                                                                       </div>
 
                                                                       <div class="card__back">
-                                                                                <a href="https://netflix-landingpage-2020.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                                                <a href="https://netflix-landingpage-2020.netlify.app/" target="_blank">check it out <br> <i class="fas fa-arrow-right"></i></a>
                                                                                 <ul class="card__subtitle">
                                                                                   <li>HTML</li>
                                                                                   <li>CSS</li>
@@ -231,7 +259,7 @@
                                                               </div>
 
                                                               <div class="card__back">
-                                                                        <a href="https://roll-a-random-dice.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                                        <a href="https://roll-a-random-dice.netlify.app/" target="_blank">check it out  <br><i class="fas fa-arrow-right"></i></a>
                                                                         <ul class="card__subtitle">
                                                                           <li>HTML</li>
                                                                           <li>CSS</li>
@@ -248,7 +276,7 @@
                                                       </div>
 
                                                       <div class="card__back">
-                                                                <a href="https://map-of-workouts.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                                <a href="https://map-of-workouts.netlify.app/" target="_blank">check it out <br> <i class="fas fa-arrow-right"></i></a>
                                                                 <ul class="card__subtitle">
                                                                   <li>HTML</li>
                                                                   <li>CSS</li>
@@ -265,7 +293,7 @@
                                               </div>
 
                                               <div class="card__back">
-                                                        <a href="https://loruki-web-2021.netlify.app/" target="_blank">check it out <i class="fas fa-arrow-right"></i></a>
+                                                        <a href="https://loruki-web-2021.netlify.app/" target="_blank">check it out <br> <i class="fas fa-arrow-right"></i></a>
                                                         <ul class="card__subtitle">
                                                           <li>HTML</li>
                                                           <li>CSS</li>
@@ -280,7 +308,7 @@
                     
     </main>
 
-    <section class="section-contact container">
+    <section class="section-contact section container" id='section--3'>
           <h2>Contact me</h2>
           <h4>I'm currently looking for new opportunities.</h4>
           <h4>
@@ -307,10 +335,10 @@
     
         <footer class="footer">
           <ul class="footer__links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#section--0" class='nav__link'>Home</a></li>
 
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#section--1" class='nav__link'>About</a></li>
+            <li><a href="#section--2" class='nav__link'>Projects</a></li>
           </ul>
           <!-- <a href="#"> <img src="./img/logo-R.png" alt="logo R" class="logo"></a> -->
 
@@ -325,7 +353,29 @@
     
           <p>&copy; Copyright 2021 by Renata Diurczak</p>
         </footer>
-    
+
+
+        <!-- Slides, text animation -->
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">It's All</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">About</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">Creating It.</span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+     <!-- gsap3 cdn -->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"
+      ></script>
         <script src="script.js"></script>
   </body>
 </html>

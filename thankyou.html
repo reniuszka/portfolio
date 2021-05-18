@@ -4,9 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email sent</title>
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- google fonts 
+ -->
+ <link rel="preconnect" href="https://fonts.gstatic.com" />
+ <link
+   href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Barriecito&family=Josefin+Sans:wght@100;200&family=Megrim&family=Montserrat:wght@200;300;400;500;600;700;900&family=New+Tegomin&family=Shadows+Into+Light&display=swap"
+   rel="stylesheet"
+ />
+ <link
+   href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
+   rel="stylesheet"
+ />
+
+    <link rel="stylesheet" href="style css/main.css" />
+    <title>Portfolio | Renata Diurczak</title>
   </head>
   <body>
-    <h2>Thank you, your email has been sent. Have a wonderful day!</h2>
+    <div class='header--thankyou'>
+      <div class="container">
+        <div class="navbar">
+          <img src="./img/logo-R.png" alt="logo R" class="logo"/>
+          <nav class="nav__link active" id='nav'>
+            <ul>
+              <li><a href="./resume/Renata-Diurczak.Resume2021.pdf" target="_blank" id="resume">Resume</a></li>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.html#section--2" class='nav__link'>Projects</a></li>
+              <li><a href="/index.html#section--3" class='nav__link'>Contact</a></li>
+            </ul>
+            <button class="icon" id="toggle">
+                      <div class="line line1"></div>
+                      <div class="line line2"></div>
+            </button>
+          </nav>
+        </div>
+
+        <div class="header__main">
+                  <div class="header__text">
+                              <h1>Thank your for you email!</h1>
+                              
+                              <p id="header__text2">I'll try my best to
+                                get back to you!</p>
+          </div>
+          
+          <img id="header__girl" src="img/hobbies.png" alt="anime girl" />
+        </div>
+      </div>
+    </div>
+
+   
+    
+        <footer class="footer">
+          <ul class="footer__links">
+            <li><a href="/index.html">Home</a></li>
+
+            <li><a href="/index.html#section--1" class='nav__link'>About</a></li>
+            <li><a href="/index.html#section--2" class='nav__link'>Projects</a></li>
+          </ul>
+          <!-- <a href="#"> <img src="./img/logo-R.png" alt="logo R" class="logo"></a> -->
+
+          <div class="footer__social">
+                    <a href="./resume/Renata.Diurczak.Resume.pdf" target="_blank"><i class="far fa-file fa-2x"></i></i></a>
+                    <a href="https://github.com/reniuszka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                    
+                    <a href="https://www.linkedin.com/in/renata-diurczak/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+                  </div>
+          
+          
+    
+          <p>&copy; Copyright 2021 by Renata Diurczak</p>
+        </footer>
+    
+        <script src="script.js"></script>
   </body>
 </html>
