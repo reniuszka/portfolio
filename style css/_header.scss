@@ -122,6 +122,7 @@ nav.active {
 #header__girl {
   width: 70%;
   overflow: hidden;
+  margin-left: 2rem;
 
   animation: moveInRight 6s ease-in infinite;
 }
@@ -134,7 +135,7 @@ nav.active {
 
   70% {
     opacity: 1;
-    transform: translateX(-3rem);
+    transform: translateX(-1rem);
   }
 
   100% {
